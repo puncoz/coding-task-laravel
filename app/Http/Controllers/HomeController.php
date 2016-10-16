@@ -2,15 +2,11 @@
 
 namespace CodingTask\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use CodingTask\Http\Requests;
-
 class HomeController extends Controller
 {
     private static $viewData = [];
 
-    function __construct()
+    public function __construct()
     {
         self::$viewData['pageInfo'] = (object) [
             'title' => trans('general.home_page'),

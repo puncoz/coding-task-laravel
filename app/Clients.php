@@ -7,21 +7,23 @@ class Clients
     private $clients = [];
     private $csvFile;
 
-    function __construct($csvFile)
+    public function __construct($csvFile)
     {
         $this->csvFile = $csvFile;
         $clients = $this->read($csvFile);
-        $this->clients = $clients===false ? [] : $clients;
+        $this->clients = $clients === false ? [] : $clients;
     }
 
-    public function all($value='')
+    public function all($value = '')
     {
         return $this->clients;
     }
+
     public function find($id)
     {
         return isset($this->clients[$id]) ? $this->clients[$id] : false;
     }
+
     public function add($data)
     {
         return $this->write($this->csvFile, $data);
@@ -46,6 +48,7 @@ class Clients
 
         return empty($data) ? false : $data;
     }
+
     private function write($csvFile, $data)
     {
         if (empty($data)) {

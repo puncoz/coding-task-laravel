@@ -38,6 +38,7 @@ if (!function_exists('is_nav_active')) {
     function is_nav_active($path, $level = 1, $active = 'active')
     {
         $url = explode('/', Request::path());
-        return isset($url[$level-1]) && $url[$level - 1] == $path ? $active : '';
+
+        return isset($url[$level - 1]) && $url[$level - 1] == $path ? $active : '';
     }
 }

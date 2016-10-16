@@ -1,7 +1,7 @@
 <?php
 
 return [
-    
+
     // About Software
     'software_name'     => 'Coding Tasks',
     'software_acronym'  => 'Coding Tasks',

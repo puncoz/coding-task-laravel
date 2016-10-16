@@ -3,5 +3,5 @@
 
     <script type="text/javascript">
         // Config
-        
+        var current_url = "{{ Request::url() }}"
     </script>

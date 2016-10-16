@@ -13,7 +13,7 @@ class HomeController extends Controller
     function __construct()
     {
         self::$viewData['pageInfo'] = (object) [
-            'title' => 'Home',
+            'title' => trans('general.home_page'),
         ];
     }
 

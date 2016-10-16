@@ -165,8 +165,7 @@ $.fn.submitForm = function() {
             if(resp.status == 'error') {
                 if (resp.message == 'form_error') {
                     $.each(resp.data, function(index, element) {
-                        if(element.id == csrf_token_name) $("input[name="+element.id+"]").val(element.message);
-                        else $.fn.displayError(element.id, element.message);
+                        $.fn.displayError(element.id, element.message);
                     });
                 } else {
                     respStatus = refreshPage = true;

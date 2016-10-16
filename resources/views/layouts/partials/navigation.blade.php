@@ -17,7 +17,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="">
+                <li class="{{ is_nav_active('client') }}">
                     <a href="{{URL::to('client')}}">
                         Clients
                     </a>

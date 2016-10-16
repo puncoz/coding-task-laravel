@@ -4,7 +4,7 @@ This task is to build a part of client section of a system. It is build in Larav
 
 ### Technology Used
 
-1. PHP - Laravel 5 Framework
+1. PHP - Laravel 5.3 Framework
 1. Frontend - Bower Components
 	1. Bootstrap
 	1. Html5shiv

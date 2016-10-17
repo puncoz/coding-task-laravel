@@ -34,5 +34,5 @@ This task is to build a part of client section of a system. It is build in Larav
 
 ### Demo Link
 
-1. [Heroku](https://coding-task-laravel.herokuapp.com/)
-2. [Pagoda Box](http://coding-task-laravel.gopagoda.io/)
+1. [puncoz.com](http://coding-task-laravel.puncoz.com/)
+2. [Heroku](http://coding-task-laravel.herokuapp.com/)

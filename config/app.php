@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://coding-task-laravel.herokuapp.com/'),
+    'url' => env('APP_URL', 'http://coding-task-laravel.herokuapp.com/'),
 
     /*
     |--------------------------------------------------------------------------

@@ -30,8 +30,7 @@ class ClientController extends Controller
         $offSet = ($page * $paginate) - $paginate;
         $itemsForCurrentPage = array_slice($clients, $offSet, $paginate, true);
         $result = new \Illuminate\Pagination\LengthAwarePaginator($itemsForCurrentPage, count($clients), $paginate, $page);
-        $result = self::$viewData['clients'] = $result; //->toArray();
-        // print_r($result);exit;
+        $result = self::$viewData['clients'] = $result;
 
         return view('pages.client.list')
             ->with(self::$viewData);

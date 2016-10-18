@@ -18,7 +18,7 @@
     <a href="{{URL::to('client/add')}}" class="btn btn-success tooltip-success pull-right loadForm" 
         data-toggle="tooltip" data-placement="top" title="Add client"
         data-popupbtnlabel="Add" data-popuptitle="Add New Client" data-popupclass="dialog-60">
-        <span class="fa fa-user-plus"></span>
+        <span class="fa fa-user-plus"><span class="sr-only">Add</span></span>
     </a>    
     
     <div class="clearfix"></div>
@@ -57,12 +57,12 @@
                     <a href="{{URL::to('client/edit/'.url_encrypt($id))}}" class="btn btn-xs btn-info tooltip-info loadForm" 
                         data-toggle="tooltip" data-placement="top" title="edit"
                         data-popupbtnlabel="Update" data-popuptitle="Update Client" data-popupclass="dialog-60">
-                        <span class="fa fa-edit"></span>
+                        <span class="fa fa-edit"><span class="sr-only">Edit</span></span>
                     </a>
                     <a href="{{URL::to('client/delete/'.url_encrypt($id))}}" class="btn btn-xs btn-danger tooltip-danger bootbox-confirm" 
                         data-toggle="tooltip" data-placement="top" title="delete"
                         data-msg="Are you sure? You cannot undo once confirmed.">
-                        <span class="fa fa-remove"></span>
+                        <span class="fa fa-remove"><span class="sr-only">Delete</span></span>
                     </a>
                 </td>
             </tr>
